@@ -1,0 +1,72 @@
+.contain {
+  min-width: 300px;
+  max-width: 620px;
+  height: 100vh;
+  margin: auto;
+  box-shadow: 0 0 6px #9ad5ee;
+}
+.contain .titlebar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  padding: 0 5px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #ffffff;
+  background-color: #9ad5ee;
+  box-shadow: 0 2px 6px #b0eaff;
+}
+.contain .chatBox {
+  position: relative;
+  height: 80%;
+  overflow: scroll;
+}
+.contain .chatBox::-webkit-scrollbar {
+  display: none;
+}
+.contain .chatBox .he {
+  display: flex;
+  align-items: center;
+  padding: 6px 56px 0 6px;
+}
+.contain .chatBox .he .text {
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: #baeaff;
+  margin-left: 10px;
+}
+.contain .chatBox .me {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 6px 6px 0 56px;
+}
+.contain .chatBox .me .text {
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: #89f0c0;
+  margin-right: 10px;
+}
+.contain .input-group {
+  display: flex;
+  height: 10%;
+  background-color: #9ad5ee;
+}
+.contain .input-group #input {
+  resize: none;
+  height: 100%;
+}
+.contain .input-group #input::-webkit-scrollbar {
+  display: none;
+}
+img.rimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.icon {
+  align-self: flex-start;
+}

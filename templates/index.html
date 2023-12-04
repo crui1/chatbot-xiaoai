@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>聊天机器人</title>
+    <link href="/static/img/favicon.ico" rel="shortcut icon"/>
+    <link href="./static/css/base.css" rel="stylesheet">
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./static/css/robot.css" rel="stylesheet">
+    <script src="./static/js/jQuery.min.js"></script>
+    <script src="./static/js/robot.js"></script>
+</head>
+
+<body>
+<div class="contain">
+    <!-- 提示音频 -->
+    <audio autoplay id="audio" src="" style="display: none;"></audio>
+    <!-- 标题栏 -->
+    <div class="titlebar">
+        <span>小艾同学</span>
+        <img alt="" class="rimg" src="./static/img/_15.jpg">
+    </div>
+    <!-- 聊天内容框 -->
+    <div class="chatBox">
+        <!-- robot -->
+        <div class="he">
+            <div class="icon"><img alt="" class="rimg" src="./static/img/_15.jpg"/></div>
+            <div class="text">你好。我是机器人 小艾.</div>
+        </div>
+        <!-- me -->
+    </div>
+    <!-- 输入框 -->
+    <div class="input-group">
+        <textarea class="form-control" id="input" required></textarea>
+        <button class="btn btn-info" id="btn-send" type="button">发送</button>
+    </div>
+</div>
+</body>
+
+</html>
