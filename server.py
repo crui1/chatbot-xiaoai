@@ -22,7 +22,7 @@ def chat():
 
     resp = make_response(json.dumps({"info": msg, "code": 0}, ensure_ascii=False))
     resp.headers["Content-Type"] = "application/json;charset=UTF-8"
-    resp.headers["Access-Control-Allow-Origin"] = "*"
+    # resp.headers["Access-Control-Allow-Origin"] = "*"
     return resp
 
 

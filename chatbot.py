@@ -6,13 +6,13 @@ import numpy as np
 import requests
 from gensim.models import Word2Vec
 from keras import backend as K
-from keras.initializers.initializers_v2 import TruncatedNormal
-# from keras.initializers import TruncatedNormal
+# from keras.initializers.initializers_v2 import TruncatedNormal
+from keras.initializers import TruncatedNormal
 from keras.layers import Embedding
 from keras.layers import Input, Dense, LSTM, TimeDistributed, Activation
 from keras.layers import concatenate, dot
 from keras.models import Model, load_model
-from keras_preprocessing import sequence
+from keras.preprocessing import sequence
 
 
 class MoodDetect:
