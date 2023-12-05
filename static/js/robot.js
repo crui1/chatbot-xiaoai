@@ -49,10 +49,10 @@ $(function () {
 	function addMessage(text, me = false) {
 		if (me) {
 			var div = $('<div class="me"><div class="text">' + text +
-				'</div><div class="icon"><img src="./static/img/_10.jpg" class="rimg"></div></div>')
+				'</div><div class="icon"><img src="/static/img/_10.jpg" class="rimg"></div></div>')
 		} else {
 			var div = $(
-				'<div class="he"><div class="icon"><img src="./static/img/_15.jpg" alt="" class="rimg" /></div><div class="text">' +
+				'<div class="he"><div class="icon"><img src="/static/img/_15.jpg" alt="" class="rimg" /></div><div class="text">' +
 				text + '</div></div>')
 		}
 		$('.chatBox').append(div)
@@ -61,20 +61,19 @@ $(function () {
 	}
 
 	function getMsg(text) {
+	    let url_ =  location.origin+'/api/chat'
 		let msg = {
 			"message": text
 		}
 		$.ajax({
 			method: 'post',
-			url: 'http://localhost:8888/api/chat',
+			url: url_,
 			data: JSON.stringify(msg),
 			contentType: "application/json;charset=UTF-8",
 			success: function (res) {
-				// console.log(res)
 				if (res.code === 0) {
 					// 接受聊天信息
 					var msg = res.info.text
-					// console.log(msg)
 					addMessage(msg)
 					// 调用getVoice函数，把文本转化为语音
 					// 播放提示音
