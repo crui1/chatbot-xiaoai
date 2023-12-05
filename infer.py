@@ -45,9 +45,4 @@ def emotion_detection_function(input):
 
     data = sequence.pad_sequences(data, maxlen=voc_dim)
     pre = model.predict(data, verbose=0)[0].tolist()
-    # print(pre)
-    # print("输入：")
-    # print("  ",in_str)
-    # print("        ")
-    # print("输出:")
-    return (label[pre.index(max(pre))])
+    return label[pre.index(max(pre))]

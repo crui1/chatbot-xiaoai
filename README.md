@@ -16,7 +16,6 @@
 - vscode启动server.py,通过终端给出的网址进入，以此来访问该项目。
 
 ## Docker 命令一键运行
-
 ```bash
 docker run -p 8888:8888 -dt devmrc/chatbot-xiaoai:1.12
 ```

@@ -1,7 +1,7 @@
 import pickle
 
 import numpy as np
-from keras.initializers.initializers_v2 import TruncatedNormal
+from keras.initializers import TruncatedNormal
 from keras.layers import Embedding
 from keras.layers import Input, Dense, LSTM, TimeDistributed, Activation
 from keras.layers import concatenate, dot
