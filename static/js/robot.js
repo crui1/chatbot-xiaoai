@@ -61,7 +61,7 @@ $(function () {
 	}
 
 	function getMsg(text) {
-	    let url_ =  location.origin+'/api/chat'
+	    let url_ =  '/api/chat'
 		let msg = {
 			"message": text
 		}
